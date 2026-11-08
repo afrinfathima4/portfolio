@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Afrin Fathima - Python Full Stack Developer and Computer Science Engineering graduate. Explore projects, experience, skills, and publications.">
+  <meta name="keywords"
+    content="Afrin Fathima, Python Full Stack Developer, SCMS Engineering, Flask, Django, React, Portfolio">
+  <meta name="author" content="Afrin Fathima">
+  <title>Afrin Fathima | Python Full Stack Developer</title>
+
+  <!-- Google Fonts for modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Background Ambient Glow Effects -->
+  <div class="ambient-glow ambient-glow--1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow--2" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__container">
+      <a href="#home" class="logo" data-target="home" aria-label="Afrin Fathima Homepage">
+        <span class="logo__badge">AF</span>
+        <span class="logo__text">Afrin <span class="text-accent">Fathima</span></span>
+      </a>
+
+      <div class="header__actions">
+        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer"
+          class="btn btn--primary btn--sm header__cv-btn">
+          <span>View CV</span>
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Unique Left-Side Floating Navigation Dock -->
+  <aside class="floating-dock" id="floating-dock" aria-label="Page Sections Navigation">
+    <nav class="floating-dock__nav">
+      <ul class="floating-dock__list">
+        <li class="floating-dock__item">
+          <button type="button" class="dock-btn active" data-target="home" aria-label="Home section"
+            aria-current="page">
+            <span class="dock-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </span>
+            <span class="dock-btn__tooltip">Home</span>
+          </button>
+        </li>
+        <li class="floating-dock__item">
+          <button type="button" class="dock-btn" data-target="about" aria-label="About section">
+            <span class="dock-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </span>
+            <span class="dock-btn__tooltip">About Me</span>
+          </button>
+        </li>
+        <li class="floating-dock__item">
+          <button type="button" class="dock-btn" data-target="skills" aria-label="Skills section">
+            <span class="dock-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </span>
+            <span class="dock-btn__tooltip">Skills</span>
+          </button>
+        </li>
+        <li class="floating-dock__item">
+          <button type="button" class="dock-btn" data-target="projects" aria-label="Projects section">
+            <span class="dock-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </span>
+            <span class="dock-btn__tooltip">Projects</span>
+          </button>
+        </li>
+        <li class="floating-dock__item">
+          <button type="button" class="dock-btn" data-target="experience" aria-label="Experience section">
+            <span class="dock-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </span>
+            <span class="dock-btn__tooltip">Experience</span>
+          </button>
+        </li>
+        <li class="floating-dock__item">
+          <button type="button" class="dock-btn" data-target="education" aria-label="Education section">
+            <span class="dock-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </span>
+            <span class="dock-btn__tooltip">Education</span>
+          </button>
+        </li>
+        <li class="floating-dock__item">
+          <button type="button" class="dock-btn" data-target="achievements"
+            aria-label="Achievements & Publication section">
+            <span class="dock-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </span>
+            <span class="dock-btn__tooltip">Achievements & Publication</span>
+          </button>
+        </li>
+        <li class="floating-dock__item">
+          <button type="button" class="dock-btn" data-target="contact" aria-label="Contact section">
+            <span class="dock-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </span>
+            <span class="dock-btn__tooltip">Contact</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content Container: Only ONE section active at a time -->
+  <main class="main-content" id="main-content">
+
+    <!-- ==================== 1. HOME SECTION ==================== -->
+    <section class="section active" id="home" aria-labelledby="home-heading">
+      <div class="container">
+        <div class="hero">
+          <div class="hero__content">
+            <div class="badge">
+              <span class="badge__dot"></span>
+              <span>Available for Opportunities</span>
+            </div>
+
+            <h1 class="hero__title" id="home-heading">
+              Hi, my name is <br><span class="text-gradient">Afrin Fathima</span>.
+            </h1>
+
+            <h2 class="hero__subtitle">
+              Python Full Stack Developer
+            </h2>
+
+            <p class="hero__summary">
+              Computer Science Engineering graduate seeking an entry-level Software Developer role, with foundational
+              knowledge of Python, C, Java, SQL, and web technologies. Passionate about engineering practical software
+              solutions, building clean responsive web architectures, and continuously mastering new technologies.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="hero__cta">
+              <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--primary"
+                id="view-cv-btn">
+                <span>View CV</span>
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </a>
+
+              <button type="button" class="btn btn--secondary" data-target="projects" id="view-projects-btn">
+                <span>View Projects</span>
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Social Links -->
+            <div class="hero__socials">
+              <span class="hero__socials-label">Connect:</span>
+              <div class="social-links">
+                <a href="https://github.com/afrinfathima4" target="_blank" rel="noopener noreferrer" class="social-link"
+                  aria-label="GitHub Profile">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                  <span class="sr-only">GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/afrin-fathima-280152256" target="_blank" rel="noopener noreferrer"
+                  class="social-link" aria-label="LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                  <span class="sr-only">LinkedIn</span>
+                </a>
+                <a href="mailto:afrinfathima0414@gmail.com" class="social-link" aria-label="Email Afrin Fathima">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span class="sr-only">Email</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Image with subtle glow ring -->
+          <div class="hero__image-wrapper">
+            <div class="hero__image-frame">
+              <img src="assets/profile.png" alt="Afrin Fathima - Python Full Stack Developer" class="hero__image"
+                width="360" height="480">
+            </div>
+            <div class="hero__image-card">
+              <div class="status-indicator">
+                <span class="status-indicator__dot"></span>
+                <div>
+                  <p class="status-indicator__subtitle">B.Tech CSE Graduate</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Me Preview Card on Home Screen -->
+        <article class="home-preview">
+          <div class="home-preview__header">
+            <div>
+              <span class="eyebrow">Overview</span>
+              <h3 class="home-preview__title">About Me Preview</h3>
+            </div>
+            <button type="button" class="btn btn--link" data-target="about">
+              <span>Read Full Profile</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+          <div class="home-preview__grid">
+            <div class="home-preview__item">
+              <h4 class="home-preview__item-title">Engineering Background</h4>
+              <p class="home-preview__item-desc">
+                B.Tech in Computer Science and Engineering from SCMS School of Engineering and Technology with an 8.62
+                CGPA.
+              </p>
+            </div>
+            <div class="home-preview__item">
+              <h4 class="home-preview__item-title">Full Stack Focus</h4>
+              <p class="home-preview__item-desc">
+                Specialized in Python web development (Django, Flask), modern frontend tooling, and database management.
+              </p>
+            </div>
+            <div class="home-preview__item">
+              <h4 class="home-preview__item-title">Research & Projects</h4>
+              <p class="home-preview__item-desc">
+                Author of an IEEE published paper on dynamic AI and creator of deep-learning cyberbullying prevention
+                software.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================== 2. ABOUT SECTION ==================== -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Get to know me</span>
+          <h2 class="section-title" id="about-heading">About <span class="text-gradient">Me</span></h2>
+          <p class="section-subtitle">A quick introduction to my background, aspirations, and values</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="card about-story">
+            <h3 class="card__title">Professional Summary</h3>
+            <p class="card__text">
+              I am a <strong>Computer Science Engineering graduate</strong> seeking an entry-level Software Developer
+              role, with foundational knowledge of <strong>Python, C, Java, SQL</strong>, and modern web technologies.
+            </p>
+            <p class="card__text">
+              I am passionate about developing practical, reliable software solutions, solving complex technical
+              problems, and contributing meaningfully to collaborative development teams while continuously learning and
+              improving my technical competencies.
+            </p>
+            <p class="card__text">
+              With hands-on experience spanning full-stack web applications, machine learning integration, and data
+              scraping solutions, I enjoy building tools that solve real human challenges with clean code and robust
+              architecture.
+            </p>
+
+            <div class="about-meta-grid">
+              <div class="about-meta-item">
+                <span class="about-meta-item__label">Location</span>
+                <span class="about-meta-item__value">Kochi, Kerala, India</span>
+              </div>
+              <div class="about-meta-item">
+                <span class="about-meta-item__label">Degree</span>
+                <span class="about-meta-item__value">B.Tech Computer Science & Engineering</span>
+              </div>
+              <div class="about-meta-item">
+                <span class="about-meta-item__label">Specialization</span>
+                <span class="about-meta-item__value">Python Full Stack Web Development</span>
+              </div>
+              <div class="about-meta-item">
+                <span class="about-meta-item__label">Email</span>
+                <a href="mailto:afrinfathima0414@gmail.com"
+                  class="about-meta-item__value text-accent">afrinfathima0414@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card about-attributes">
+            <h3 class="card__title">Core Soft Skills & Strengths</h3>
+            <p class="card__text">Key attributes that shape my day-to-day workflow and team collaboration:</p>
+            <ul class="tag-cloud">
+              <li class="tag-pill">Communication</li>
+              <li class="tag-pill">Problem-Solving</li>
+              <li class="tag-pill">Teamwork</li>
+              <li class="tag-pill">Adaptability</li>
+              <li class="tag-pill">Time Management</li>
+              <li class="tag-pill">Willingness to Learn</li>
+              <li class="tag-pill">Attention to Detail</li>
+              <li class="tag-pill">Analytical Thinking</li>
+            </ul>
+
+            <div class="highlight-box">
+              <div class="highlight-box__icon" aria-hidden="true">💡</div>
+              <div class="highlight-box__content">
+                <h4 class="highlight-box__title">Always Evolving</h4>
+                <p class="highlight-box__text">
+                  I enjoy exploring new technologies, solving problems, and continuously improving my technical skills.
+                  I am passionate about building web applications, learning new programming concepts, and growing as a
+                  developer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. SKILLS SECTION ==================== -->
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Technical Competencies</span>
+          <h2 class="section-title" id="skills-heading">My <span class="text-gradient">Skills</span></h2>
+          <p class="section-subtitle">Verified technical proficiencies and conceptual knowledge from my CV</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="card skill-card">
+            <div class="skill-card__header">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Programming Languages</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">Python</span>
+                  <span class="skill-item__level">Proficient</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">C</span>
+                  <span class="skill-item__level">Foundational</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">Java</span>
+                  <span class="skill-item__level">Basic</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">JavaScript</span>
+                  <span class="skill-item__level">Basic</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Frontend Technologies -->
+          <div class="card skill-card">
+            <div class="skill-card__header">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="9" y1="21" x2="9" y2="9"></line>
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Frontend Technologies</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">HTML5</span>
+                  <span class="skill-item__level">Semantic Web</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">CSS3</span>
+                  <span class="skill-item__level">Responsive & Modern</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">React.js</span>
+                  <span class="skill-item__level">Component Architecture</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">Tailwind CSS</span>
+                  <span class="skill-item__level">Utility-first</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">Bootstrap</span>
+                  <span class="skill-item__level">Grid & Components</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Backend Technologies -->
+          <div class="card skill-card">
+            <div class="skill-card__header">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Backend Technologies</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">Flask</span>
+                  <span class="skill-item__level">REST APIs & Routing</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">Django</span>
+                  <span class="skill-item__level">Full-Stack Framework</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">Node.js</span>
+                  <span class="skill-item__level">Basic Web Scraping</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Databases -->
+          <div class="card skill-card">
+            <div class="skill-card__header">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Databases</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">MySQL</span>
+                  <span class="skill-item__level">Relational Modeling</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">SQLite</span>
+                  <span class="skill-item__level">Lightweight Database</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">SQL Queries</span>
+                  <span class="skill-item__level">CRUD & Schema Design</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="card skill-card">
+            <div class="skill-card__header">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Tools & Productivity</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">Git</span>
+                  <span class="skill-item__level">Version Control</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">GitHub</span>
+                  <span class="skill-item__level">Collaboration & Repos</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">Visual Studio Code</span>
+                  <span class="skill-item__level">Primary IDE</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">MS Excel</span>
+                  <span class="skill-item__level">Data Analysis & Organizing</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">MS PowerPoint</span>
+                  <span class="skill-item__level">Technical Presentations</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Core Concepts -->
+          <div class="card skill-card">
+            <div class="skill-card__header">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Core Concepts</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">Object-Oriented Programming (OOP)</span>
+                  <span class="skill-item__level">Strong Core</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">Operating Systems</span>
+                  <span class="skill-item__level">Foundations</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">Computer Networks</span>
+                  <span class="skill-item__level">Protocols & Models</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">Database Management Systems (DBMS)</span>
+                  <span class="skill-item__level">Relational Data</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__info">
+                  <span class="skill-item__name">Data Structures & Algorithms</span>
+                  <span class="skill-item__level">Basics</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. PROJECTS SECTION ==================== -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Practical Work</span>
+          <h2 class="section-title" id="projects-heading">Featured <span class="text-gradient">Projects</span></h2>
+          <p class="section-subtitle">Real-world applications built with Python, modern web frameworks, and deep
+            learning</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: AI Cyberbullying Prevention -->
+          <article class="card project-card">
+            <div class="project-card__badge-wrapper">
+              <span class="project-tag">AI & Full-Stack</span>
+              <span class="project-date">Final Year Project</span>
+            </div>
+
+            <h3 class="project-card__title">AI-Based Cyberbullying Prevention System</h3>
+
+            <p class="project-card__desc">
+              A comprehensive secure social media platform engineered to safeguard digital spaces by autonomously
+              detecting, classifying, and moderating malicious communication in real time.
+            </p>
+
+            <div class="project-card__highlights">
+              <h4 class="project-card__highlights-title">Key Implementations:</h4>
+              <ul class="bullet-list">
+                <li>Developed a secure social media platform using <strong>React.js</strong>, <strong>Flask</strong>,
+                  and <strong>MySQL</strong>, enabling users to create posts, communicate in real time, and interact
+                  securely.</li>
+                <li>Designed and trained a deep learning <strong>CNN-BiLSTM with Attention model</strong> for real-time
+                  cyberbullying detection and text classification.</li>
+                <li>Applied NLP preprocessing pipelines including text cleaning, tokenization, padding, and word
+                  embeddings.</li>
+                <li>Integrated the trained model into the messaging platform to automatically detect, flag, and moderate
+                  harmful messages, significantly enhancing user safety.</li>
+              </ul>
+            </div>
+
+            <div class="project-card__stack">
+              <span class="stack-chip">React.js</span>
+              <span class="stack-chip">Flask</span>
+              <span class="stack-chip">MySQL</span>
+              <span class="stack-chip">Python</span>
+              <span class="stack-chip">CNN-BiLSTM</span>
+              <span class="stack-chip">Attention Mechanism</span>
+              <span class="stack-chip">NLP</span>
+            </div>
+
+            <div class="project-card__footer">
+              <a href="https://github.com/afrinfathima4" target="_blank" rel="noopener noreferrer"
+                class="btn btn--outline">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn__icon">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Task Management Application -->
+          <article class="card project-card">
+            <div class="project-card__badge-wrapper">
+              <span class="project-tag">Full-Stack Web App</span>
+              <span class="project-date">Web Application</span>
+            </div>
+
+            <h3 class="project-card__title">Task Management (To-Do List) Application</h3>
+
+            <p class="project-card__desc">
+              A responsive, end-to-end task organization platform designed to streamline daily task management,
+              tracking, and prioritization through a clean UI and resilient API backplane.
+            </p>
+
+            <div class="project-card__highlights">
+              <h4 class="project-card__highlights-title">Key Implementations:</h4>
+              <ul class="bullet-list">
+                <li>Developed a full-stack Task Management application utilizing <strong>React.js</strong> for a fluid
+                  interface, <strong>Flask</strong> for API routing, and <strong>SQLite</strong> for data persistence.
+                </li>
+                <li>Built structured, standardized <strong>REST APIs</strong> to add, retrieve, filter, and delete tasks
+                  dynamically.</li>
+                <li>Seamlessly integrated the reactive frontend client with the Flask backend server and SQLite database
+                  for frictionless task management and instant updates.</li>
+              </ul>
+            </div>
+
+            <div class="project-card__stack">
+              <span class="stack-chip">React.js</span>
+              <span class="stack-chip">Flask</span>
+              <span class="stack-chip">SQLite</span>
+              <span class="stack-chip">REST APIs</span>
+              <span class="stack-chip">Python</span>
+              <span class="stack-chip">JSON</span>
+            </div>
+
+            <div class="project-card__footer">
+              <a href="https://github.com/afrinfathima4" target="_blank" rel="noopener noreferrer"
+                class="btn btn--outline">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn__icon">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. EXPERIENCE SECTION ==================== -->
+    <section class="section" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Professional Background</span>
+          <h2 class="section-title" id="experience-heading">Internship <span class="text-gradient">Experience</span>
+          </h2>
+          <p class="section-subtitle">Practical industry exposure and engineering training</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Experience 1: SMEC Technologies -->
+          <article class="timeline-item">
+            <div class="timeline-item__marker" aria-hidden="true"></div>
+            <div class="card timeline-item__content">
+              <div class="timeline-item__top">
+                <div>
+                  <h3 class="timeline-item__role">Python Full Stack Intern</h3>
+                  <h4 class="timeline-item__company">SMEC Technologies</h4>
+                </div>
+                <span class="timeline-item__badge">August 2026 – Present</span>
+              </div>
+              <ul class="bullet-list">
+                <li>Developing skills in Python programming, web development, and database management through hands-on
+                  industrial training.</li>
+                <li>Practicing full-stack development concepts and applying them through practical coding exercises and
+                  end-to-end projects.</li>
+                <li>Gaining practical experience in building clean database schemas and architecting server-side logic.
+                </li>
+              </ul>
+              <div class="timeline-item__tags">
+                <span class="tag-pill">Python</span>
+                <span class="tag-pill">Web Development</span>
+                <span class="tag-pill">Database Management</span>
+                <span class="tag-pill">Full Stack</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience 2: OrbitSol -->
+          <article class="timeline-item">
+            <div class="timeline-item__marker" aria-hidden="true"></div>
+            <div class="card timeline-item__content">
+              <div class="timeline-item__top">
+                <div>
+                  <h3 class="timeline-item__role">Intern</h3>
+                  <h4 class="timeline-item__company">OrbitSol</h4>
+                </div>
+                <span class="timeline-item__badge">June 2026 – July 2026</span>
+              </div>
+              <ul class="bullet-list">
+                <li>Collected, organized, and maintained structured business data using Microsoft Excel.</li>
+                <li>Developed a Node.js-based web scraping solution to extract company contact information, including
+                  names, email addresses, phone numbers, and job roles from business websites.</li>
+                <li>Adapted quickly to professional workflows, deadline requirements, and industry best practices.</li>
+              </ul>
+              <div class="timeline-item__tags">
+                <span class="tag-pill">Node.js</span>
+                <span class="tag-pill">Web Scraping</span>
+                <span class="tag-pill">Microsoft Excel</span>
+                <span class="tag-pill">Data Management</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. EDUCATION SECTION ==================== -->
+    <section class="section" id="education" aria-labelledby="education-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Academic Qualifications</span>
+          <h2 class="section-title" id="education-heading">My <span class="text-gradient">Education</span></h2>
+          <p class="section-subtitle">Academic degrees and foundational schooling records</p>
+        </div>
+
+        <div class="education-grid">
+          <!-- B.Tech Degree -->
+          <div class="card education-card">
+            <div class="education-card__header">
+              <div class="education-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div>
+                <span class="education-card__period">Graduating June 2026</span>
+                <h3 class="education-card__degree">B.Tech in Computer Science and Engineering</h3>
+              </div>
+            </div>
+
+            <p class="education-card__institution">
+              SCMS School of Engineering and Technology, Karukutty, Ernakulam
+            </p>
+
+            <div class="education-card__score-box">
+              <span class="score-label">Cumulative GPA:</span>
+              <span class="score-value">8.67 / 10.0</span>
+            </div>
+
+            <p class="education-card__details">
+              Focus on software engineering, data structures, object-oriented programming, operating systems, computer
+              networking, database management, and intelligent web applications.
+            </p>
+          </div>
+
+          <!-- Class XII -->
+          <div class="card education-card">
+            <div class="education-card__header">
+              <div class="education-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <span class="education-card__period">Completed May 2022</span>
+                <h3 class="education-card__degree">Higher Secondary Education (Class XII)</h3>
+              </div>
+            </div>
+
+            <p class="education-card__institution">
+              ST. ANN’S Higher Secondary School, Eloor, Ernakulam
+            </p>
+
+            <div class="education-card__score-box">
+              <span class="score-label">Final Board Score:</span>
+              <span class="score-value">95.25%</span>
+            </div>
+
+            <p class="education-card__details">
+              Completed high school with distinction in core science and mathematics streams, cultivating rigorous
+              analytical and problem-solving thinking.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. ACHIEVEMENTS & PUBLICATION SECTION ==================== -->
+    <section class="section" id="achievements" aria-labelledby="achievements-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Milestones</span>
+          <h2 class="section-title" id="achievements-heading">Achievements & <span
+              class="text-gradient">Publication</span></h2>
+          <p class="section-subtitle">Conference research publication and institutional honors</p>
+        </div>
+
+        <!-- Featured Publication Card -->
+        <article class="card publication-card">
+          <div class="publication-card__badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              class="publication-card__badge-icon" aria-hidden="true">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+            <span>IEEE Conference Publication</span>
+          </div>
+
+          <h3 class="publication-card__title">
+            A Personalized Chess AI Framework with Minimal Training and Dynamic Player Adaptation
+          </h3>
+
+          <p class="publication-card__meta">
+            Published in: <strong>IEEE Conference Proceedings | IEEE Xplore</strong>
+          </p>
+
+          <p class="publication-card__text">
+            Authored research presenting a specialized framework for chess artificial intelligence that achieves
+            personal style adaptation with minimal initial training data. The research formulates dynamic opponent
+            response models that adjust gameplay dynamically to the human player's style and moves.
+          </p>
+
+          <div class="publication-card__tags">
+            <span class="stack-chip">IEEE Xplore</span>
+            <span class="stack-chip">Artificial Intelligence</span>
+            <span class="stack-chip">Dynamic Adaptation</span>
+            <span class="stack-chip">Game Theory</span>
+          </div>
+        </article>
+
+        <!-- Achievements & Activities Grid -->
+        <div class="achievements-grid">
+          <!-- Academic Rank -->
+          <div class="card achievement-card">
+            <div class="achievement-card__icon" aria-hidden="true">🏆</div>
+            <div class="achievement-card__body">
+              <span class="achievement-card__eyebrow">Academic Merit</span>
+              <h3 class="achievement-card__title">Second Position in Semester 7</h3>
+              <p class="achievement-card__text">
+                Secured <strong>2nd Rank</strong> in the department in Semester 7 examinations with an outstanding
+                <strong>SGPA of 9.87</strong>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Hackathon -->
+          <div class="card achievement-card">
+            <div class="achievement-card__icon" aria-hidden="true">⚡</div>
+            <div class="achievement-card__body">
+              <span class="achievement-card__eyebrow">Hackathon</span>
+              <h3 class="achievement-card__title">TINK-HER-HACK 3.0</h3>
+              <p class="achievement-card__text">
+                Active participant in <strong>TINK-HER-HACK 3.0</strong> hosted at SCMS School of Engineering and
+                Technology, building rapid tech solutions in a collaborative environment.
+              </p>
+            </div>
+          </div>
+
+          <!-- IoT Workshop -->
+          <div class="card achievement-card">
+            <div class="achievement-card__icon" aria-hidden="true">🛠️</div>
+            <div class="achievement-card__body">
+              <span class="achievement-card__eyebrow">Workshop</span>
+              <h3 class="achievement-card__title">Hands-on IoT Workshop</h3>
+              <p class="achievement-card__text">
+                Participated in a comprehensive hands-on Internet of Things (IoT) technical workshop conducted by the
+                <strong>ICT Academy of Kerala</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. CONTACT SECTION ==================== -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Get in touch</span>
+          <h2 class="section-title" id="contact-heading">Contact <span class="text-gradient">Me</span></h2>
+          <p class="section-subtitle">Feel free to reach out for opportunities, collaborations, or technical
+            conversations</p>
+        </div>
+
+        <div class="contact-card card">
+          <div class="contact-card__intro">
+            <h3 class="contact-card__title">Let's Connect and Build Something Great</h3>
+            <p class="contact-card__text">
+              I am actively looking for an entry-level Software Developer role or Python Full Stack opportunities. If
+              you have an open position, a project to collaborate on, or would like to discuss my research and projects,
+              I'd love to hear from you.
+            </p>
+          </div>
+
+          <div class="contact-channels">
+            <!-- Email Channel -->
+            <div class="contact-channel">
+              <div class="contact-channel__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-channel__content">
+                <span class="contact-channel__label">Direct Email</span>
+                <a href="mailto:afrinfathima0414@gmail.com"
+                  class="contact-channel__value">afrinfathima0414@gmail.com</a>
+              </div>
+              <a href="mailto:afrinfathima0414@gmail.com" class="btn btn--outline btn--sm">
+                <span>Send Email</span>
+              </a>
+            </div>
+
+            <!-- LinkedIn Channel -->
+            <div class="contact-channel">
+              <div class="contact-channel__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div class="contact-channel__content">
+                <span class="contact-channel__label">LinkedIn Network</span>
+                <a href="https://www.linkedin.com/in/afrin-fathima-280152256" target="_blank" rel="noopener noreferrer"
+                  class="contact-channel__value">linkedin.com/in/afrin-fathima-280152256</a>
+              </div>
+              <a href="https://www.linkedin.com/in/afrin-fathima-280152256" target="_blank" rel="noopener noreferrer"
+                class="btn btn--outline btn--sm">
+                <span>Connect</span>
+              </a>
+            </div>
+
+            <!-- GitHub Channel -->
+            <div class="contact-channel">
+              <div class="contact-channel__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+              </div>
+              <div class="contact-channel__content">
+                <span class="contact-channel__label">GitHub Profile</span>
+                <a href="https://github.com/afrinfathima4" target="_blank" rel="noopener noreferrer"
+                  class="contact-channel__value">github.com/afrinfathima4</a>
+              </div>
+              <a href="https://github.com/afrinfathima4" target="_blank" rel="noopener noreferrer"
+                class="btn btn--outline btn--sm">
+                <span>View Repos</span>
+              </a>
+            </div>
+
+            <!-- Location Channel -->
+            <div class="contact-channel">
+              <div class="contact-channel__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-channel__content">
+                <span class="contact-channel__label">Location</span>
+                <span class="contact-channel__value">Kochi, Kerala, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
